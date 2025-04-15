@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ElottoIA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #06192f;
+      color: white;
+    }
+    h2, h1 {
+      text-align: center;
+    }
+    .hero, .intro-section, .trust-section, .modes-section, .comparison-section, .cta-section, footer {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .logo {
+      max-width: 300px;
+      display: block;
+      margin: 0 auto 30px;
+    }
+    .buttons, .features, .benefits {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1000px;
+      margin: 30px auto;
+    }
+    .btn {
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .btn-yellow {
+      background-color: #ffd500;
+      color: #000;
+    }
+    .btn-dark {
+      background-color: #0a1628;
+      color: white;
+      border: 1px solid #ccc;
+    }
+    .feature, .benefit {
+      width: 280px;
+      background: #0b2944;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    }
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .modes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .mode {
+      width: 280px;
+      text-align: center;
+    }
+    .mode img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    table {
+      width: 90%;
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      background: white;
+      color: #000;
+    }
+    .cta-section {
+      background-color: #051425;
+    }
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .cta-image img {
+      width: 150px;
+      margin-top: 30px;
+    }
+    footer {
+      background: #000c1a;
+      color: #bbb;
+    }
+    .footer-links, .lang-select {
+      margin: 10px auto;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <img src="elottoia_logo.png" alt="Logo" class="logo" />
+    <h1 id="main-title">Optimiza tus combinaciones de<br>Euromillones<br>con Inteligencia Artificial</h1>
+    <p>Una herramienta moderna que combina datos reales, lógica estadística e IA para mejorar tu juego.</p>
+    <div class="buttons">
+      <a href="#" class="btn btn-yellow">Probar ahora</a>
+      <a href="#" class="btn btn-dark">Ver cómo funciona</a>
+    </div>
+  </section>
+
+  <section class="intro-section">
+    <h2>¿Qué es ElottoIA?</h2>
+    <div class="features">
+      <div class="feature"><div class="icon">🤖</div><h3>IA</h3><p>Detecta patrones y predice con datos reales.</p></div>
+      <div class="feature"><div class="icon">📊</div><h3>Estadística</h3><p>Análisis de sorteos reales y patrones comunes.</p></div>
+      <div class="feature"><div class="icon">🎲</div><h3>Modos flexibles</h3><p>Elige entre Aleatorio, Frecuencia o Híbrido.</p></div>
+    </div>
+  </section>
+
+  <section class="trust-section">
+    <h2>¿Por qué confiar en ElottoIA?</h2>
+    <div class="benefits">
+      <div class="benefit"><div class="icon">🧠</div><h3>IA + Datos reales</h3><p>Análisis predictivo basado en sorteos históricos.</p></div>
+      <div class="benefit"><div class="icon">⚙️</div><h3>Métodos validados</h3><p>Modelos estadísticos y patrones repetitivos.</p></div>
+      <div class="benefit"><div class="icon">🖐️</div><h3>Bajo tu control</h3><p>Personaliza cómo generar tus combinaciones.</p></div>
+    </div>
+  </section>
+
+  <section class="modes-section">
+    <h2>¿Cómo funciona ElottoIA?</h2>
+    <div class="modes">
+      <div class="mode"><img src="aleatoriobarra.png"><h3>Aleatorio</h3><p>Totalmente al azar, sin filtros ni lógica.</p></div>
+      <div class="mode"><img src="frecuenciabarra.png"><h3>Frecuencia</h3><p>Basado en los números que más se repiten.</p></div>
+      <div class="mode"><img src="hibridobarra.png"><h3>Híbrido</h3><p>Combinación entre lógica estadística y azar.</p></div>
+    </div>
+  </section>
+
+  <section class="comparison-section">
+    <h2>Comparativa con otras plataformas</h2>
+    
+<table>
+  <thead>
+    <tr><th>Características</th><th>Otras plataformas</th><th>ElottoIA</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Combinaciones aleatorias</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Estadísticas reales de sorteos</td><td>⚠️ Limitadas</td><td>✅ Completas</td></tr>
+    <tr><td>Inteligencia Artificial aplicada</td><td>❌</td><td>✅</td></tr>
+    <tr><td>Modo híbrido (azar + IA)</td><td>❌</td><td>✅</td></tr>
+    <tr><td>Personalización por idioma</td><td>⚠️ Parcial</td><td>✅ 7 idiomas</td></tr>
+    <tr><td>Interfaz amigable y moderna</td><td>⚠️ Tradicional</td><td>✅ Optimizada</td></tr>
+  </tbody>
+</table>
+
+  </section>
+
+  <section class="cta-section">
+    <h2>Empieza a jugar con inteligencia</h2>
+    <p>Descarga ElottoIA o pruébala desde tu navegador. ¡Es rápido, simple y 100% gratuito!</p>
+    <div class="cta-buttons">
+      <a href="#" class="btn btn-yellow">Descargar app</a>
+      <a href="#" class="btn btn-dark">Probar versión web</a>
+    </div>
+    <div class="cta-image"><img src="qr_elottoia.png" alt="QR"></div>
+  </section>
+
+  <footer>
+    <div class="lang-select">
+      <label for="language">Idioma:</label>
+      <select id="language">
+        <option>Español</option><option>English</option><option>Français</option><option>Português</option>
+      </select>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:info@elottoia.com">info@elottoia.com</a>
+      <a href="javascript:void(0);" onclick="mostrarAvisoLegal()">Aviso legal</a>
+      <a href="javascript:void(0);" onclick="mostrarPoliticaPrivacidad()">Política de privacidad</a>
+    </div>
+    <p>© 2025 ElottoIA – Todos los derechos reservados</p>
+  </footer>
+
+
+  <section class="features-extended">
+    <h2>¿Qué ofrece ElottoIA?</h2>
+    <p class="subtitle" id="main-subtitle">Mucho más que un generador de combinaciones</p>
+    <div class="grid-features">
+      <div class="card">
+        <h3>🎰 Múltiples modos de generación</h3>
+        <ul>
+          <li>Aleatorio: puro azar</li>
+          <li>Frecuencia: basado en datos históricos</li>
+          <li>Híbrido: IA + estadística + azar</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>📈 Estadísticas históricas completas</h3>
+        <ul>
+          <li>Frecuencia de números y estrellas por año</li>
+          <li>Top 5 de estrellas y pares más comunes</li>
+          <li>Porcentaje global de aparición</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🧠 Inteligencia Artificial aplicada</h3>
+        <ul>
+          <li>Fuerza predictiva por combinación</li>
+          <li>Detección de patrones y pares de riesgo</li>
+          <li>Similitud histórica en cada jugada</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>📊 Visualización interactiva</h3>
+        <ul>
+          <li>Gráfico de evolución de cada número</li>
+          <li>Comparativa de hasta 5 números</li>
+          <li>Exploración dinámica por año</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🗂️ Funciones adicionales</h3>
+        <ul>
+          <li>Exportación de historial</li>
+          <li>Registro de sorteos manual</li>
+          <li>Visualización de archivos neuronales</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🌍 Multilenguaje y experiencia cuidada</h3>
+        <ul>
+          <li>Disponible en 7 idiomas</li>
+          <li>Fondos visuales por modo de juego</li>
+          <li>Interfaz clara y adaptada a móvil</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .features-extended {
+      background-color: #06192f;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .features-extended h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .features-extended .subtitle {
+      color: #aaa;
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+    }
+
+    .grid-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: #0b2944;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+      text-align: left;
+    }
+
+    .card h3 {
+      color: #ffd500;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .card ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .card ul li::before {
+      content: "✔️";
+      margin-right: 8px;
+      color: #ffd500;
+    }
+
+    .card ul li {
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+  </style>
+
+
+<script>
+const translations = {
+  es: {
+    "lang-label": "Idioma:",
+    "main-title": "Optimiza tus combinaciones de Euromillones con Inteligencia Artificial",
+    "main-subtitle": "Una herramienta moderna que combina datos reales, lógica estadística e IA para mejorar tu juego."
+  },
+  en: {
+    "lang-label": "Language:",
+    "main-title": "Optimize your EuroMillions picks with Artificial Intelligence",
+    "main-subtitle": "A modern tool combining real data, statistics and AI to boost your play."
+  },
+  fr: {
+    "lang-label": "Langue :",
+    "main-title": "Optimisez vos combinaisons EuroMillions avec l’intelligence artificielle",
+    "main-subtitle": "Un outil moderne alliant données réelles, logique statistique et IA."
+  },
+  pt: {
+    "lang-label": "Idioma:",
+    "main-title": "Otimize suas combinações do EuroMilhões com Inteligência Artificial",
+    "main-subtitle": "Uma ferramenta moderna que combina dados reais, estatísticas e IA."
+  },
+  it: {
+    "lang-label": "Lingua:",
+    "main-title": "Ottimizza le tue combinazioni EuroMillions con l’Intelligenza Artificiale",
+    "main-subtitle": "Uno strumento moderno che unisce dati reali, logica statistica e IA."
+  },
+  de: {
+    "lang-label": "Sprache:",
+    "main-title": "Optimiere deine EuroMillions-Kombinationen mit Künstlicher Intelligenz",
+    "main-subtitle": "Ein modernes Tool mit echten Daten, Statistik und KI."
+  },
+  nl: {
+    "lang-label": "Taal:",
+    "main-title": "Optimaliseer je EuroMillions-combinaties met AI",
+    "main-subtitle": "Een moderne tool met echte gegevens, statistiek en AI."
+  }
+};
+
+document.getElementById("language").addEventListener("change", function () {
+  const lang = this.value;
+  const t = translations[lang];
+  document.getElementById("lang-label").textContent = t["lang-label"];
+  document.getElementById("main-title").textContent = t["main-title"];
+  document.getElementById("main-subtitle").textContent = t["main-subtitle"];
+});
+</script>
+
+
+<!-- Aviso Legal -->
+<div id="legalModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.85); z-index:9999; padding:40px; overflow:auto;">
+  <div style="max-width:900px; margin:auto; background-color:#0b2944; padding:40px; border-radius:10px; color:white;">
+    <h2 style="text-align: center; color: #ffd500;">Aviso Legal</h2>
+    <p><strong>ElottoIA</strong> es una plataforma desarrollada con fines estrictamente informativos y de entretenimiento. Su función es proporcionar herramientas para analizar estadísticas históricas y generar combinaciones relacionadas con el juego Euromillones.</p>
+    <p>El contenido ofrecido por ElottoIA, incluidas las combinaciones generadas, se basa en patrones matemáticos, modelos estadísticos y procesos aleatorios. <strong>En ningún caso se garantiza, expresa o implícitamente, que dichas combinaciones obtengan premios en sorteos oficiales</strong>.</p>
+    <p>El uso de esta herramienta es responsabilidad exclusiva del usuario. Las decisiones que tome basadas en la información proporcionada en esta web son de carácter voluntario y bajo su propio riesgo. ElottoIA no se responsabiliza por pérdidas económicas ni por decisiones derivadas del uso de esta plataforma.</p>
+    <p>Todos los elementos gráficos, nombres comerciales, código fuente y contenido del sitio están protegidos por la legislación de propiedad intelectual e industrial. Queda prohibida la reproducción total o parcial sin la debida autorización expresa de los titulares de los derechos.</p>
+    <h3 style="margin-top: 30px; color: #ffd500;">Juego Responsable</h3>
+    <p>ElottoIA promueve el <strong>juego responsable</strong>. Recomendamos jugar de manera consciente, estableciendo límites de gasto y evitando que el juego interfiera en la vida personal o financiera. El juego debe entenderse como una actividad recreativa y no como un método para obtener ingresos.</p>
+    <p>Si crees que tú o alguien cercano podría estar desarrollando una conducta de riesgo relacionada con el juego, te instamos a buscar ayuda profesional. Existen líneas de atención y entidades especializadas que pueden orientarte de forma confidencial.</p>
+    <p style="text-align: center; margin-top: 30px;">Última actualización: abril de 2025</p>
+    <div style="text-align:center; margin-top: 30px;">
+      <button onclick="document.getElementById('legalModal').style.display='none'" style="background:#ffd500; border:none; padding:10px 20px; border-radius:6px; font-weight:bold; cursor:pointer;">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Política de Privacidad -->
+<div id="privacyModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.85); z-index:9999; padding:40px; overflow:auto;">
+  <div style="max-width:900px; margin:auto; background-color:#0b2944; padding:40px; border-radius:10px; color:white;">
+    <h2 style="text-align: center; color: #ffd500;">Política de Privacidad</h2>
+    <p>En ElottoIA, la privacidad y la protección de datos de los usuarios son una prioridad. Esta plataforma no solicita ni recopila información personal identificativa de los usuarios. Tampoco requiere procesos de registro ni almacenamiento de datos sensibles.</p>
+    <p>La aplicación puede emplear cookies técnicas y funcionales esenciales para garantizar el funcionamiento básico del sitio y mejorar la experiencia del usuario. No se utilizan cookies con fines publicitarios ni para crear perfiles individuales.</p>
+    <p>ElottoIA no comparte, vende ni transmite ningún tipo de dato personal a terceros. Cualquier interacción que realice el usuario (como la generación de combinaciones o uso de herramientas estadísticas) se realiza de forma anónima y local.</p>
+    <p>Este sitio cumple con las disposiciones del Reglamento General de Protección de Datos (RGPD) de la Unión Europea. Nos comprometemos a mantener prácticas seguras y respetuosas con la privacidad.</p>
+    <p>Para cualquier duda relacionada con esta política, puedes ponerte en contacto con nosotros a través del correo electrónico: <strong>soporte@elottoia.com</strong>.</p>
+    <p style="text-align: center; margin-top: 30px;">Última actualización: abril de 2025</p>
+    <div style="text-align:center; margin-top: 30px;">
+      <button onclick="document.getElementById('privacyModal').style.display='none'" style="background:#ffd500; border:none; padding:10px 20px; border-radius:6px; font-weight:bold; cursor:pointer;">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  function mostrarAvisoLegal() {
+    document.getElementById('legalModal').style.display = 'block';
+  }
+  function mostrarPoliticaPrivacidad() {
+    document.getElementById('privacyModal').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
