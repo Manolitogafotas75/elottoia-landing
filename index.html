@@ -244,21 +244,6 @@
 <a class="btn btn-secondary" style="pointer-events: none; opacity: 0.6;">
       Descargar app (próximamente)
 <a class="btn btn-green" href="https://manolitogafotas75.github.io/elottoia-premium-login/" target="_blank">Versión Completa</a>
-// Redirigir a la zona premium solo si el usuario está autenticado
-function redirectToPremium() {
-  const user = auth.currentUser;  // Verifica si hay un usuario autenticado
-  if (user) {
-    // Si el usuario está autenticado, revisamos si tiene acceso premium
-    checkAccess();
-  } else {
-    // Si el usuario no está autenticado, redirigir a la página de login
-    window.location.href = '/login';  // Asegúrate de que esta ruta sea la correcta para tu login
-  }
-}
-
-// Llamar a la función cuando se haga clic en el botón "Versión Completa"
-document.getElementById('btn-version-completa').addEventListener('click', redirectToPremium);
-
 </div>
 </section>
 <footer>
